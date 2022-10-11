@@ -34,11 +34,16 @@ class AttributeFormDataProvider
     public function getData($idAntelope = null)
     {
         $antelopeEntity = $this->getAntelopeEntity($idAntelope);
-        return [
-            AntelopeForm::FIELD_ID_ANTELOPE => $antelopeEntity->getIdAntelope(),
-            AntelopeForm::FIELD_NAME => $antelopeEntity->getName(),
-            AntelopeForm::FIELD_COLOR => $antelopeEntity->getColor(),
-        ];
+        if ($antelopeEntity) {
+            $result = [
+                AntelopeForm::FIELD_ID_ANTELOPE => $antelopeEntity->getIdAntelope(),
+                AntelopeForm::FIELD_NAME => $antelopeEntity->getName(),
+                AntelopeForm::FIELD_COLOR => $antelopeEntity->getColor(),
+            ];
+        } else {
+            $result = null;
+        }
+        return $result;
     }
 
     /**

@@ -32,7 +32,10 @@ class ViewController extends AbstractController
         $idAntelope = $this->castId($idAntelope);
 
         $antelopeTransfer = $this->loadAntelopeTransfer($idAntelope);
-
+        if (empty($antelopeTransfer)) {
+            $this->addErrorMessage('This antelope id is invalid');
+            return $this->redirectResponse('/antelope');
+        }
         return $this->viewResponse([
             'antelope' => $antelopeTransfer,
             'idAntelope' => $idAntelope,

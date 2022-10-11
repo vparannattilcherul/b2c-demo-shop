@@ -28,9 +28,16 @@ class EditController extends AbstractController
             ->getFactory()
             ->createAttributeFormDataProvider();
 
+        $antelopeData = $dataProvider->getData($idAntelope);
+
+        if (!$antelopeData) {
+            $this->addErrorMessage('This antelope id is invalid');
+            return $this->redirectResponse('/antelope');
+        }
+
         $antelopeForm = $this
             ->getFactory()
-            ->getAttributeForm($dataProvider->getData($idAntelope))
+            ->getAttributeForm($antelopeData)
             ->handleRequest($request);
 
         if (!$antelopeForm->isSubmitted() || !$antelopeForm->isValid()) {

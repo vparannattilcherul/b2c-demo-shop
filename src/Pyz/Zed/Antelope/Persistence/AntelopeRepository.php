@@ -19,7 +19,7 @@ class AntelopeRepository extends AbstractRepository implements AntelopeRepositor
     {
         $antelopeEntity = $this->getAntelopeEntityFromId($idAntelope);
 
-        if ($antelopeEntity === null) {
+        if ($antelopeEntity->isNew()) {
             return null;
         }
 
