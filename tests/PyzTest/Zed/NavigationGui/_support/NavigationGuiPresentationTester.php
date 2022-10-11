@@ -1,9 +1,9 @@
 <?php
 
-/**
- * This file is part of the Spryker Commerce OS.
- * For full license information, please view the LICENSE file that was distributed with this source code.
- */
+/
+  This file is part of the Spryker Commerce OS.
+  For full license information, please view the LICENSE file that was distributed with this source code.
+ /
 
 namespace PyzTest\Zed\NavigationGui;
 
@@ -16,22 +16,22 @@ use Generated\Shared\Transfer\NavigationTreeTransfer;
 use Orm\Zed\Navigation\Persistence\SpyNavigation;
 use Orm\Zed\Navigation\Persistence\SpyNavigationQuery;
 
-/**
- * Inherited Methods
- *
- * @method void wantToTest($text)
- * @method void wantTo($text)
- * @method void execute($callable)
- * @method void expectTo($prediction)
- * @method void expect($prediction)
- * @method void amGoingTo($argumentation)
- * @method void am($role)
- * @method void lookForwardTo($achieveValue)
- * @method void comment($description)
- * @method \Codeception\Lib\Friend haveFriend($name, $actorClass = NULL)
- *
- * @SuppressWarnings(PHPMD)
- */
+/
+  Inherited Methods
+ 
+  @method void wantToTest($text)
+  @method void wantTo($text)
+  @method void execute($callable)
+  @method void expectTo($prediction)
+  @method void expect($prediction)
+  @method void amGoingTo($argumentation)
+  @method void am($role)
+  @method void lookForwardTo($achieveValue)
+  @method void comment($description)
+  @method \Codeception\Lib\Friend haveFriend($name, $actorClass = NULL)
+ 
+  @SuppressWarnings(PHPMD)
+ /
 class NavigationGuiPresentationTester extends Actor
 {
     use _generated\NavigationGuiPresentationTesterActions;
@@ -45,7 +45,7 @@ class NavigationGuiPresentationTester extends Actor
     public const ADD_CHILD_NODE_BUTTON_SELECTOR = '#add-child-node-btn';
     public const LOCALIZED_FORM_CONTAINER_SELECTOR = '#localized_attributes_container-%s .collapse-link';
     public const NODE_CHILD_SELECTOR = '#navigation-node-%d #navigation-node-%d';
-    public const NODE_NAME_CHILD_SELECTOR = "//*[@id=\"navigation-node-%d\"]//*[text()[contains(.,'%s')]]";
+    public const NODE_NAME_CHILD_SELECTOR = "//[@id=\"navigation-node-%d\"]//[text()[contains(.,'%s')]]";
     public const NODE_FORM_IFRAME_NAME = 'navigation-node-form-iframe';
     public const SUCCESS_MESSAGE_SELECTOR = '.flash-messages .alert-success';
     public const SWEET_ALERT_SELECTOR = '.sweet-alert';
@@ -53,12 +53,12 @@ class NavigationGuiPresentationTester extends Actor
     public const NODE_FORM_SELECTOR = 'form';
     public const NODE_UPDATE_FORM_SELECTOR = '//form[@name="navigation_node"]';
     public const FLASH_MESSAGES_SELECTOR = '//div[@class="flash-messages"]/div';
-    public const NAVIGATION_DELETE_FORM_SELECTOR = '//*[@id="navigation-table"]/tbody/tr/td[5]/form[1]';
-    public const NAVIGATION_ROW_ACTIVE_LINK_SELECTOR = '//*[@id="navigation-table"]/tbody/tr[1]/td[5]/a[2]';
+    public const NAVIGATION_DELETE_FORM_SELECTOR = '//[@id="navigation-table"]/tbody/tr/td[5]/form[1]';
+    public const NAVIGATION_ROW_ACTIVE_LINK_SELECTOR = '//[@id="navigation-table"]/tbody/tr[1]/td[5]/a[2]';
 
-    /**
-     * @param \Codeception\Scenario $scenario
-     */
+    /
+      @param \Codeception\Scenario $scenario
+     /
     public function __construct(Scenario $scenario)
     {
         parent::__construct($scenario);
@@ -67,27 +67,27 @@ class NavigationGuiPresentationTester extends Actor
         $this->amLoggedInUser();
     }
 
-    /**
-     * @param string $value
-     *
-     * @return void
-     */
+    /
+      @param string $value
+     
+      @return void
+     /
     public function setNameField($value)
     {
-        $this->fillField('//*[@id="navigation_name"]', $value);
+        $this->fillField('//[@id="navigation_name"]', $value);
     }
 
-    /**
-     * @param string $value
-     *
-     * @return void
-     */
+    /
+      @param string $value
+     
+      @return void
+     /
     public function setKeyField($value)
     {
-        $this->fillField('//*[@id="navigation_key"]', $value);
+        $this->fillField('//[@id="navigation_key"]', $value);
     }
 
-    /**
+    /*
      * @param bool $checked
      *
      * @return void

@@ -3,13 +3,13 @@
 
     <table name="spy_url">
         <behavior name="event">
-            <parameter name="spy_url_all" column="*"/>
+            <parameter name="spy_url_all" column=""/>
         </behavior>
     </table>
 
     <table name="spy_url_redirect">
         <behavior name="event">
-            <parameter name="spy_url_redirect_event_all" column="*"/>
+            <parameter name="spy_url_redirect_event_all" column=""/>
         </behavior>
     </table>
 </database>

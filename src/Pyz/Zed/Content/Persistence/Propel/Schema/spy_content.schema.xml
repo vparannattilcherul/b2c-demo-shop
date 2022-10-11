@@ -3,7 +3,7 @@
 
     <table name="spy_content" phpName="SpyContent">
         <behavior name="event">
-            <parameter name="spy_content_all" column="*"/>
+            <parameter name="spy_content_all" column=""/>
         </behavior>
     </table>
 </database>

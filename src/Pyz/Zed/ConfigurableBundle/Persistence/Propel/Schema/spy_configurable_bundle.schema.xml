@@ -3,13 +3,13 @@
 
     <table name="spy_configurable_bundle_template">
         <behavior name="event">
-            <parameter name="spy_configurable_bundle_template_all" column="*"/>
+            <parameter name="spy_configurable_bundle_template_all" column=""/>
         </behavior>
     </table>
 
     <table name="spy_configurable_bundle_template_slot">
         <behavior name="event">
-            <parameter name="spy_configurable_bundle_template_slot_all" column="*"/>
+            <parameter name="spy_configurable_bundle_template_slot_all" column=""/>
         </behavior>
     </table>
 

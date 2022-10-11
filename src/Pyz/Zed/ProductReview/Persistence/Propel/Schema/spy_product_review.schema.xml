@@ -3,7 +3,7 @@
 
     <table name="spy_product_review">
         <behavior name="event">
-            <parameter name="spy_product_review_all" column="*"/>
+            <parameter name="spy_product_review_all" column=""/>
         </behavior>
     </table>
 

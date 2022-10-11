@@ -3,19 +3,19 @@
 
     <table name="spy_tax_set">
         <behavior name="event">
-            <parameter name="spy_tax_set_all" column="*"/>
+            <parameter name="spy_tax_set_all" column=""/>
         </behavior>
     </table>
 
     <table name="spy_tax_rate">
         <behavior name="event">
-            <parameter name="spy_tax_rate_all" column="*"/>
+            <parameter name="spy_tax_rate_all" column=""/>
         </behavior>
     </table>
 
     <table name="spy_tax_set_tax">
         <behavior name="event">
-            <parameter name="spy_tax_set_tax_all" column="*"/>
+            <parameter name="spy_tax_set_tax_all" column=""/>
         </behavior>
     </table>
 

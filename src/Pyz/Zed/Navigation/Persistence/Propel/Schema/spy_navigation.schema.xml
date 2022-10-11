@@ -3,19 +3,19 @@
 
     <table name="spy_navigation">
         <behavior name="event">
-            <parameter name="spy_navigation-all" column="*"/>
+            <parameter name="spy_navigation-all" column=""/>
         </behavior>
     </table>
 
     <table name="spy_navigation_node">
         <behavior name="event">
-            <parameter name="spy_navigation_node-all" column="*"/>
+            <parameter name="spy_navigation_node-all" column=""/>
         </behavior>
     </table>
 
     <table name="spy_navigation_node_localized_attributes">
         <behavior name="event">
-            <parameter name="spy_navigation_node_localized_attributes-all" column="*"/>
+            <parameter name="spy_navigation_node_localized_attributes-all" column=""/>
         </behavior>
     </table>
 

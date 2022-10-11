@@ -52,6 +52,8 @@ use Spryker\Zed\TaxProductStorage\Communication\Plugin\Event\Subscriber\TaxProdu
 use Spryker\Zed\TaxStorage\Communication\Plugin\Event\Subscriber\TaxStorageSubscriber;
 use Spryker\Zed\UrlStorage\Communication\Plugin\Event\Subscriber\UrlStorageEventSubscriber;
 
+use Pyz\Zed\AntelopeSearch\Communication\Plugin\Event\Subscriber\AntelopeSearchEventSubscriber;
+
 class EventDependencyProvider extends SprykerEventDependencyProvider
 {
     /**
@@ -112,6 +114,8 @@ class EventDependencyProvider extends SprykerEventDependencyProvider
         $eventSubscriberCollection->add(new ConfigurableBundleTemplateImagePageSearchEventSubscriber());
 
         $eventSubscriberCollection->add(new PublisherSubscriber());
+
+        $eventSubscriberCollection->add(new AntelopeSearchEventSubscriber());
 
         return $eventSubscriberCollection;
     }

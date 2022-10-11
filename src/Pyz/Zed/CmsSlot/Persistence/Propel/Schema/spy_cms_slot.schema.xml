@@ -3,7 +3,7 @@
 
     <table name="spy_cms_slot">
         <behavior name="event">
-            <parameter name="spy_cms_slot_all" column="*"/>
+            <parameter name="spy_cms_slot_all" column=""/>
         </behavior>
     </table>
 

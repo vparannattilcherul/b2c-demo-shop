@@ -1,4 +1,4 @@
-.git*
+.git
 .idea
 .DS_Store
 node_modules
@@ -6,8 +6,8 @@ node_modules
 /data
 !/data/import
 !/data/export
-.git*
-.unison*
+.git
+.unison
 .docker-sync
 /.nvmrc
 /.scrutinizer.yml
@@ -16,9 +16,9 @@ node_modules
 /docker
 !/docker/deployment/
 
-/src/Orm/Zed/*/Persistence/Base
-/src/Orm/Zed/*/Persistence/Map
-/src/Orm/Propel/*
+/src/Orm/Zed//Persistence/Base
+/src/Orm/Zed//Persistence/Map
+/src/Orm/Propel/
 !/src/Orm/Propel/.gitkeep
 
 /src/Generated
@@ -26,5 +26,5 @@ node_modules
 /public/Zed/assets
 /public/Backoffice/assets
 
-/tests/*/*/*/_output/*
-/tests/*/*/*/_support/_generated/*
+/tests////_output/
+/tests////_support/_generated/

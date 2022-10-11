@@ -3,19 +3,19 @@
 
     <table name="spy_product_set">
         <behavior name="event">
-            <parameter name="spy_product_set_all" column="*"/>
+            <parameter name="spy_product_set_all" column=""/>
         </behavior>
     </table>
 
     <table name="spy_product_abstract_set">
         <behavior name="event">
-            <parameter name="spy_product_abstract_set_all" column="*"/>
+            <parameter name="spy_product_abstract_set_all" column=""/>
         </behavior>
     </table>
 
     <table name="spy_product_set_data">
         <behavior name="event">
-            <parameter name="spy_product_set_data_all" column="*"/>
+            <parameter name="spy_product_set_data_all" column=""/>
         </behavior>
     </table>
 

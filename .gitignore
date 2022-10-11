@@ -4,10 +4,10 @@
 /nbproject
 /.buildpath
 /.settings
-*.sublime-*
-*.AppleDouble
-*.AppleDB
-*.AppleDesktop
+.sublime-
+.AppleDouble
+.AppleDB
+.AppleDesktop
 Temporary Items
 .apdisk
 GPATH
@@ -18,14 +18,14 @@ GTAGS
 .DS_Store
 
 # Y&Z
-/config/Shared/config_local*
+/config/Shared/config_local
 !/config/Shared/config_local.dist.php
 /config/Shared/console_env_local.php
-/config/Shared/cubes.*
+/config/Shared/cubes.
 /config/Zed/behat.local.yml
 /config/Zed/phpunit.core.xml
 /config/Zed/phpunit.xml
-/config/cubes.*
+/config/cubes.
 config/accumulated-config.json
 
 /src/Generated/
@@ -35,7 +35,7 @@ FOSS.md
 /public/Zed/maintenance/maintenance.marker
 /public/Backoffice/maintenance/maintenance.marker
 
-/data/*
+/data/
 !/data/import/
 !/data/translation/
 !/data/export
@@ -59,7 +59,7 @@ Vagrantfile
 # docker stuff
 /docker/
 /.docker-sync/
-/.unison*
+/.unison
 /deploy.local.yml
 
 # profiling
@@ -67,16 +67,16 @@ Vagrantfile
 
 # logs
 npm-debug.log
-/tests/_log/*
+/tests/_log/
 !/tests/_log/.gitkeep
-/tests/_output/*
+/tests/_output/
 !/tests/_output/.gitkeep
-/tests/_support/_generated/*
+/tests/_support/_generated/
 !/tests/_support/_generated/.gitkeep
 /codeception.local.yml
 
-/tests/PyzTest/*/*/_output/*
-/tests/PyzTest/*/*/_support/_generated/*
+/tests/PyzTest///_output/
+/tests/PyzTest///_support/_generated/
 
 # propel classes
 /src/Propel/Base/*

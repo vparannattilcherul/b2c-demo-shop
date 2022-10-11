@@ -1,0 +1,37 @@
+{% extends '@Gui/Layout/layout.twig' %}
+
+{% set widget_title = 'Antelope' | trans %}
+{% block section_title %}{{ widget_title }}{% endblock %}
+
+{% block action %}
+    {{ backActionButton(url('/antelope'), 'Back to Antelopes' | trans) }}
+{% endblock %}
+
+{% block content %}
+
+    <div class="tabs-container">
+
+        {{ form_start(form) }}
+        <div class="tab-content">
+            <div id="tab_general" class="tab-pane active">
+                <div class="panel-body">
+
+                    {{ form_row(form.name) }}
+
+                    {{ form_row(form.color) }}
+
+                    <hr />
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs-footer">
+            <input type="submit" class="btn btn-primary safe-submit" value="{{ 'Save' | trans }} " />
+        </div>
+        {{ form_end(form) }}
+    </div>
+
+
+{% endblock %}
+

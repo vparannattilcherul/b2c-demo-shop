@@ -1,11 +1,11 @@
-.git*
+.git
 .idea
 .DS_Store
 /.nvmrc
 /.scrutinizer.yml
 /newrelic.ini
 
-.unison*
+.unison
 .docker-sync
 /docker
 

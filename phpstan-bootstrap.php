@@ -1,9 +1,9 @@
 <?php
 
-/**
- * Copyright © 2017-present Spryker Systems GmbH. All rights reserved.
- * Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
- */
+/
+  Copyright © 2017-present Spryker Systems GmbH. All rights reserved.
+  Use of this software requires acceptance of the Evaluation License Agreement. See LICENSE file.
+ /
 
 define('APPLICATION_ROOT_DIR', __DIR__);
 define('APPLICATION_VENDOR_DIR', APPLICATION_ROOT_DIR . '/vendor');
@@ -30,12 +30,12 @@ if (!class_exists(\PHP_CodeSniffer\Config::class) && file_exists($manualAutoload
 
 // Shim to not throw "Function opcache_invalidate not found" error when opcache is not enabled
 if (!function_exists('opcache_invalidate')) {
-    /**
-     * @param string $script
-     * @param bool $force
-     *
-     * @return void
-     */
+    /
+      @param string $script
+      @param bool $force
+     
+      @return void
+     /
     function opcache_invalidate($script, $force = false)
     {
     }

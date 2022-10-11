@@ -3,7 +3,7 @@
 
     <table name="spy_product_category_filter">
         <behavior name="event">
-            <parameter name="spy_product_category_filter_all" column="*"/>
+            <parameter name="spy_product_category_filter_all" column=""/>
         </behavior>
     </table>
 </database>

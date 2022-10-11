@@ -3,7 +3,7 @@
 
     <table name="spy_sales_return_reason">
         <behavior name="event">
-            <parameter name="spy_sales_return_reason_all" column="*"/>
+            <parameter name="spy_sales_return_reason_all" column=""/>
         </behavior>
     </table>
 

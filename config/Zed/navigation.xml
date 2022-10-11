@@ -424,6 +424,15 @@
                 <controller>list</controller>
                 <action>index</action>
             </statemachines-index>
+            <antelope>
+                <label>Antelope</label>
+                <title>Antelope</title>
+                <uri>/antelope</uri>
+                <bundle>antelope</bundle>
+                <controller>index</controller>
+                <action>index</action>
+                <icon>fa-globe</icon>
+            </antelope>
         </pages>
     </administration>
     <maintenance>

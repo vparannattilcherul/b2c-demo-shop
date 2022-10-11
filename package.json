@@ -8,13 +8,13 @@
         "url": "https://spryker.com/"
     },
     "scripts": {
-        "yves": "run-s \"yves:development:* -- {@}\" --",
+        "yves": "run-s \"yves:development: -- {@}\" --",
         "yves:development:esm": "node ./frontend/build development -m module:esm",
         "yves:development:legacy": "node ./frontend/build development -m module:legacy",
-        "yves:watch": "run-p \"yves:watch:* -- {@}\" --",
+        "yves:watch": "run-p \"yves:watch: -- {@}\" --",
         "yves:watch:esm": "node ./frontend/build development-watch -m module:esm",
         "yves:watch:legacy": "node ./frontend/build development-watch -m module:legacy",
-        "yves:production": "run-s \"yves:production:* -- {@}\" --",
+        "yves:production": "run-s \"yves:production: -- {@}\" --",
         "yves:production:esm": "node ./frontend/build production -m module:esm",
         "yves:production:legacy": "node ./frontend/build production -m module:legacy",
         "yves:help": "node ./frontend/libs/command-line-parser --help",

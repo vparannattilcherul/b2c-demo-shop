@@ -3,7 +3,7 @@
 
     <table name="spy_product_alternative" idMethod="native" allowPkInsert="true" phpName="SpyProductAlternative">
         <behavior name="event">
-            <parameter name="spy_product_alternative_all" column="*"/>
+            <parameter name="spy_product_alternative_all" column=""/>
         </behavior>
     </table>
 

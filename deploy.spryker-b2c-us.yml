@@ -27,7 +27,7 @@ x-real-ip: &real-ip
             - 2a06:98c0::/29 # Cloudflare
 
 x-frontend-auth: &frontend-auth
-    <<: *real-ip
+    <<: real-ip
     auth:
         engine: basic
         users:
@@ -98,13 +98,13 @@ groups:
                 endpoints:
                     www.b2c-staging-us.cloud.spryker.toys:
                         store: US
-                        <<: *frontend-auth
+                        <<: frontend-auth
             backoffice_us:
                 application: backoffice
                 endpoints:
                     backoffice.b2c-staging-us.cloud.spryker.toys:
                         store: US
-                        <<: *frontend-auth
+                        <<: frontend-auth
             backend_gateway_us:
                 application: backend-gateway
                 endpoints:

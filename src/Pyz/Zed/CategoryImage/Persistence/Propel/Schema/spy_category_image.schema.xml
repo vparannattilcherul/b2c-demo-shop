@@ -3,19 +3,19 @@
 
     <table name="spy_category_image_set">
         <behavior name="event">
-            <parameter name="spy_category_image_set_all" column="*"/>
+            <parameter name="spy_category_image_set_all" column=""/>
         </behavior>
     </table>
 
     <table name="spy_category_image">
         <behavior name="event">
-            <parameter name="spy_category_image_all" column="*"/>
+            <parameter name="spy_category_image_all" column=""/>
         </behavior>
     </table>
 
     <table name="spy_category_image_set_to_category_image">
         <behavior name="event">
-            <parameter name="spy_category_image_set_to_category_image_all" column="*"/>
+            <parameter name="spy_category_image_set_to_category_image_all" column=""/>
         </behavior>
     </table>
 </database>

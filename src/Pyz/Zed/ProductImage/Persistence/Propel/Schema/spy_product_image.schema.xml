@@ -9,19 +9,19 @@
         </index>
 
         <behavior name="event">
-            <parameter name="spy_product_image_set_all" column="*"/>
+            <parameter name="spy_product_image_set_all" column=""/>
         </behavior>
     </table>
 
     <table name="spy_product_image">
         <behavior name="event">
-            <parameter name="spy_product_image_all" column="*"/>
+            <parameter name="spy_product_image_all" column=""/>
         </behavior>
     </table>
 
     <table name="spy_product_image_set_to_product_image">
         <behavior name="event">
-            <parameter name="spy_product_image_set_to_product_image_all" column="*"/>
+            <parameter name="spy_product_image_set_to_product_image_all" column=""/>
         </behavior>
     </table>
 </database>
