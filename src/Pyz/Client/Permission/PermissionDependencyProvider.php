@@ -13,6 +13,7 @@ use Spryker\Client\CustomerAccessPermission\Plugin\SeeOrderPlaceSubmitPermission
 use Spryker\Client\CustomerAccessPermission\Plugin\SeePricePermissionPlugin;
 use Spryker\Client\CustomerAccessPermission\Plugin\SeeWishlistPermissionPlugin;
 use Spryker\Client\Permission\PermissionDependencyProvider as SprykerPermissionDependencyProvider;
+use Spryker\Client\CustomerAccessPermission\Plugin\SeeShoppingListPermissionPlugin;
 
 class PermissionDependencyProvider extends SprykerPermissionDependencyProvider
 {
@@ -36,6 +37,7 @@ class PermissionDependencyProvider extends SprykerPermissionDependencyProvider
             new SeeOrderPlaceSubmitPermissionPlugin(),
             new SeeAddToCartPermissionPlugin(),
             new SeeWishlistPermissionPlugin(),
+            new SeeShoppingListPermissionPlugin(),
         ];
     }
 }

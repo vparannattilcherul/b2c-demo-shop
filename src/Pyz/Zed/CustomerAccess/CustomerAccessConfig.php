@@ -38,7 +38,7 @@ class CustomerAccessConfig extends SprykerCustomerAccessConfig
         return [
             SprykerSharedCustomerAccessConfig::CONTENT_TYPE_PRICE => true,
             SprykerSharedCustomerAccessConfig::CONTENT_TYPE_ORDER_PLACE_SUBMIT => true,
-            SprykerSharedCustomerAccessConfig::CONTENT_TYPE_ADD_TO_CART => true,
+            SprykerSharedCustomerAccessConfig::CONTENT_TYPE_ADD_TO_CART => false,
             SprykerSharedCustomerAccessConfig::CONTENT_TYPE_WISHLIST => false,
             SprykerSharedCustomerAccessConfig::CONTENT_TYPE_SHOPPING_LIST => false,
         ];
