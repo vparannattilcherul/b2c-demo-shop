@@ -48,6 +48,7 @@ use Spryker\Zed\ShipmentDataImport\Communication\Plugin\ShipmentMethodStoreDataI
 use Spryker\Zed\StockAddressDataImport\Communication\Plugin\DataImport\StockAddressDataImportPlugin;
 use Spryker\Zed\StockDataImport\Communication\Plugin\StockDataImportPlugin;
 use Spryker\Zed\StockDataImport\Communication\Plugin\StockStoreDataImportPlugin;
+use Spryker\Zed\BusinessOnBehalfDataImport\Communication\Plugin\DataImport\BusinessOnBehalfCompanyUserDataImportPlugin;
 
 class DataImportDependencyProvider extends SprykerDataImportDependencyProvider
 {
@@ -252,6 +253,7 @@ class DataImportDependencyProvider extends SprykerDataImportDependencyProvider
             new ContentNavigationDataImportPlugin(),
             new StockAddressDataImportPlugin(),
             new CategoryStoreDataImportPlugin(),
+            new BusinessOnBehalfCompanyUserDataImportPlugin(),
         ];
     }
 

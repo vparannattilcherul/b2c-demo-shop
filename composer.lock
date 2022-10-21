@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4efa9d423ff646330682478e007e7303",
+    "content-hash": "f14c2e1c268544ccc7b817bac6fd47c8",
     "packages": [
         {
             "name": "async-aws/core",
@@ -4532,6 +4532,74 @@
             "time": "2022-04-29T14:07:55+00:00"
         },
         {
+            "name": "spryker-feature/company-account",
+            "version": "202204.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker-feature/company-account.git",
+                "reference": "642a7b78c6821a168e1021d8830d4d6e2d29fba1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker-feature/company-account/zipball/642a7b78c6821a168e1021d8830d4d6e2d29fba1",
+                "reference": "642a7b78c6821a168e1021d8830d4d6e2d29fba1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4",
+                "spryker-shop/business-on-behalf-widget": "^1.1.0",
+                "spryker-shop/company-page": "^2.18.0",
+                "spryker-shop/company-user-agent-widget": "^1.1.0",
+                "spryker-shop/company-user-invitation-page": "^2.4.0",
+                "spryker-shop/company-widget": "^1.8.0",
+                "spryker/business-on-behalf": "^1.1.0",
+                "spryker/business-on-behalf-data-import": "^3.0.0",
+                "spryker/business-on-behalf-gui": "^1.2.0",
+                "spryker/company": "^1.5.0",
+                "spryker/company-business-unit": "^2.14.0",
+                "spryker/company-business-unit-data-import": "^0.5.2",
+                "spryker/company-business-unit-gui": "^2.8.0",
+                "spryker/company-business-unit-storage": "^1.0.0",
+                "spryker/company-data-import": "^0.2.1",
+                "spryker/company-gui": "^1.5.0",
+                "spryker/company-role": "^1.7.0",
+                "spryker/company-role-data-import": "^0.1.2",
+                "spryker/company-role-gui": "^1.6.0",
+                "spryker/company-unit-address": "^1.12.0",
+                "spryker/company-unit-address-data-import": "^0.3.1",
+                "spryker/company-unit-address-gui": "^1.0.0",
+                "spryker/company-unit-address-label": "^1.1.0",
+                "spryker/company-unit-address-label-data-import": "^0.1.1",
+                "spryker/company-unit-address-label-gui": "^1.0.0",
+                "spryker/company-user": "^2.15.0",
+                "spryker/company-user-agent": "^1.0.0",
+                "spryker/company-user-data-import": "^0.2.0",
+                "spryker/company-user-gui": "^1.6.0",
+                "spryker/company-user-invitation": "^1.2.0",
+                "spryker/company-user-storage": "^1.4.0",
+                "spryker/oauth-company-user": "^2.2.0",
+                "spryker/oauth-permission": "^1.3.0"
+            },
+            "suggest": {
+                "spryker-feature/customer-account-management": "Recommended feature dependency."
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "202204.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "Company Account [feature]",
+            "support": {
+                "source": "https://github.com/spryker-feature/company-account/tree/202204.0"
+            },
+            "time": "2022-04-29T14:08:32+00:00"
+        },
+        {
             "name": "spryker-feature/configurable-bundle",
             "version": "202204.0",
             "source": {
@@ -6493,6 +6561,51 @@
             "time": "2020-05-26T05:43:11+00:00"
         },
         {
+            "name": "spryker-shop/business-on-behalf-widget",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker-shop/business-on-behalf-widget.git",
+                "reference": "a1b747abe3319710fd85e3dff8061b26bf48351c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker-shop/business-on-behalf-widget/zipball/a1b747abe3319710fd85e3dff8061b26bf48351c",
+                "reference": "a1b747abe3319710fd85e3dff8061b26bf48351c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3",
+                "spryker-shop/shop-ui": "^1.54.0",
+                "spryker/business-on-behalf": "^1.1.0",
+                "spryker/customer": "^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0",
+                "spryker/kernel": "^3.30.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SprykerShop\\": "src/SprykerShop/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "BusinessOnBehalfWidget module",
+            "support": {
+                "source": "https://github.com/spryker-shop/business-on-behalf-widget/tree/1.1.0"
+            },
+            "time": "2021-08-16T08:44:35+00:00"
+        },
+        {
             "name": "spryker-shop/calculation-page",
             "version": "1.3.2",
             "source": {
@@ -7620,6 +7733,236 @@
                 "source": "https://github.com/spryker-shop/comment-widget-extension/tree/1.0.0"
             },
             "time": "2019-07-01T13:37:43+00:00"
+        },
+        {
+            "name": "spryker-shop/company-page",
+            "version": "2.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker-shop/company-page.git",
+                "reference": "01f30372ac1cae45c50f556b111f086caf18b0ce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker-shop/company-page/zipball/01f30372ac1cae45c50f556b111f086caf18b0ce",
+                "reference": "01f30372ac1cae45c50f556b111f086caf18b0ce",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4",
+                "spryker-shop/checkout-page-extension": "^1.0.0",
+                "spryker-shop/customer-page-extension": "^1.5.0",
+                "spryker-shop/shop-application": "^1.0.0",
+                "spryker-shop/shop-application-extension": "^1.0.0",
+                "spryker-shop/shop-ui": "^1.0.0",
+                "spryker/application": "^3.8.0",
+                "spryker/business-on-behalf": "^1.1.0",
+                "spryker/company": "^1.0.0",
+                "spryker/company-business-unit": "^2.11.0",
+                "spryker/company-role": "^1.1.0",
+                "spryker/company-unit-address": "^1.4.0",
+                "spryker/company-user": "^2.15.0",
+                "spryker/container": "^1.4.0",
+                "spryker/customer": "^7.4.0",
+                "spryker/glossary-storage": "^1.0.0",
+                "spryker/kernel": "^3.52.0",
+                "spryker/locale": "^3.0.0",
+                "spryker/messenger": "^3.1.0",
+                "spryker/permission": "^1.0.0",
+                "spryker/permission-extension": "^1.2.0",
+                "spryker/router": "^1.6.0",
+                "spryker/store": "^1.4.0",
+                "spryker/symfony": "^3.5.0"
+            },
+            "require-dev": {
+                "spryker-shop/company-user-invitation-page": "*",
+                "spryker-shop/customer-page": "*",
+                "spryker/code-sniffer": "*",
+                "spryker/silex": "*",
+                "spryker/testify": "*"
+            },
+            "suggest": {
+                "spryker-shop/company-user-invitation-page": "If you want to import new invitations from file: ^2.1.0",
+                "spryker-shop/customer-page": "If you wat to use CompanyUserPreAuthUserCheckPlugin: ^2.34.0",
+                "spryker/company-business-unit-sales-connector": "If you want to use CompanyBusinessUnitOrderSearchFormExpanderPlugin, CompanyBusinessUnitOrderSearchFormHandlerPlugin: ^1.0.0",
+                "spryker/company-sales-connector": "If you want to use CompanyBusinessUnitOrderSearchFormExpanderPlugin, CompanyBusinessUnitOrderSearchFormHandlerPlugin: ^1.0.0",
+                "spryker/silex": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SprykerShop\\": "src/SprykerShop/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyPage module",
+            "support": {
+                "source": "https://github.com/spryker-shop/company-page/tree/2.20.0"
+            },
+            "time": "2022-09-10T10:43:34+00:00"
+        },
+        {
+            "name": "spryker-shop/company-user-agent-widget",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker-shop/company-user-agent-widget.git",
+                "reference": "1a7dde37d9125c0f12772d1eed35bb8e4573f904"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker-shop/company-user-agent-widget/zipball/1a7dde37d9125c0f12772d1eed35bb8e4573f904",
+                "reference": "1a7dde37d9125c0f12772d1eed35bb8e4573f904",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "spryker-shop/shop-application": "^1.0.0",
+                "spryker-shop/shop-ui": "^1.0.0",
+                "spryker/company-user-agent": "^1.0.0",
+                "spryker/kernel": "^3.52.0",
+                "spryker/symfony": "^3.1.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/router": "*",
+                "spryker/silex": "*"
+            },
+            "suggest": {
+                "spryker/router": "Use this module if you want use the RouterProviderPlugin.",
+                "spryker/silex": "Use this module when using plugins that need Silex dependencies."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SprykerShop\\": "src/SprykerShop/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyUserAgentWidget module",
+            "support": {
+                "source": "https://github.com/spryker-shop/company-user-agent-widget/tree/master"
+            },
+            "time": "2020-07-24T04:43:12+00:00"
+        },
+        {
+            "name": "spryker-shop/company-user-invitation-page",
+            "version": "2.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker-shop/company-user-invitation-page.git",
+                "reference": "40566e4fb825ed3afc2d6b7336259c0adcee9e32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker-shop/company-user-invitation-page/zipball/40566e4fb825ed3afc2d6b7336259c0adcee9e32",
+                "reference": "40566e4fb825ed3afc2d6b7336259c0adcee9e32",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "spryker-shop/customer-page-extension": "^1.0.0",
+                "spryker-shop/shop-application": "^1.0.0",
+                "spryker-shop/shop-ui": "^1.13.0",
+                "spryker/application": "^3.8.0",
+                "spryker/company-user-invitation": "^1.0.0",
+                "spryker/csv": "^3.0.0",
+                "spryker/customer": "^7.7.1",
+                "spryker/kernel": "^3.52.0",
+                "spryker/session": "^3.2.4 || ^4.0.0",
+                "spryker/symfony": "^3.1.4"
+            },
+            "require-dev": {
+                "spryker-shop/company-page": "*",
+                "spryker/code-sniffer": "*",
+                "spryker/router": "*",
+                "spryker/silex": "*"
+            },
+            "suggest": {
+                "spryker-shop/company-page": "Use this module when you want to use the CompanyPage plugins.",
+                "spryker/router": "Use this module when you want to use the Router.",
+                "spryker/silex": "If you want to use the shops router provider"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SprykerShop\\": "src/SprykerShop/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyUserInvitationPage module",
+            "support": {
+                "source": "https://github.com/spryker-shop/company-user-invitation-page/tree/master"
+            },
+            "time": "2020-07-24T04:43:12+00:00"
+        },
+        {
+            "name": "spryker-shop/company-widget",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker-shop/company-widget.git",
+                "reference": "69dbc2fb6433c47ea651487978324b9fa8c6eaf0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker-shop/company-widget/zipball/69dbc2fb6433c47ea651487978324b9fa8c6eaf0",
+                "reference": "69dbc2fb6433c47ea651487978324b9fa8c6eaf0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3",
+                "spryker-shop/shop-ui": "^1.54.0",
+                "spryker/customer": "^7.0.0",
+                "spryker/kernel": "^3.30.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SprykerShop\\": "src/SprykerShop/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyWidget module",
+            "support": {
+                "source": "https://github.com/spryker-shop/company-widget/tree/1.8.0"
+            },
+            "time": "2021-08-16T08:44:35+00:00"
         },
         {
             "name": "spryker-shop/configurable-bundle-note-widget",
@@ -13218,6 +13561,251 @@
             "time": "2022-05-11T08:36:06+00:00"
         },
         {
+            "name": "spryker/business-on-behalf",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/business-on-behalf.git",
+                "reference": "3b6081080903d66db2d6c07d4cd75f2517ccf5c0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/business-on-behalf/zipball/3b6081080903d66db2d6c07d4cd75f2517ccf5c0",
+                "reference": "3b6081080903d66db2d6c07d4cd75f2517ccf5c0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "spryker/business-on-behalf-extension": "^1.0.0",
+                "spryker/company": "^1.0.0",
+                "spryker/company-user": "^1.2.0 || ^2.0.0",
+                "spryker/kernel": "^3.30.0",
+                "spryker/zed-request": "^3.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/customer": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*"
+            },
+            "suggest": {
+                "spryker/customer": "If you want to hydrate customer with isOnBehalf property and default company user: ^7.10.0."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/",
+                    "SprykerTest\\Zed\\BusinessOnBehalf\\Helper\\": "tests/SprykerTest/Zed/BusinessOnBehalf/_support/Helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "BusinessOnBehalf module",
+            "support": {
+                "source": "https://github.com/spryker/business-on-behalf/tree/1.1.2"
+            },
+            "time": "2020-06-02T09:42:31+00:00"
+        },
+        {
+            "name": "spryker/business-on-behalf-data-import",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/business-on-behalf-data-import.git",
+                "reference": "0d2a4da1d66ae97038d58fe7011d81ef469e3093"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/business-on-behalf-data-import/zipball/0d2a4da1d66ae97038d58fe7011d81ef469e3093",
+                "reference": "0d2a4da1d66ae97038d58fe7011d81ef469e3093",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "spryker/company": "^1.0.0",
+                "spryker/company-business-unit": "^1.0.0 || ^2.0.0",
+                "spryker/company-user": "^2.9.0",
+                "spryker/customer": "^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0",
+                "spryker/data-import": "^1.2.0",
+                "spryker/kernel": "^3.0.0"
+            },
+            "require-dev": {
+                "spryker/propel": "*",
+                "spryker/propel-orm": "*",
+                "spryker/testify": "*"
+            },
+            "suggest": {
+                "spryker/business-on-behalf": "Business on behalf introduces is default column in company user table: ^1.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/",
+                    "SprykerTest\\Zed\\BusinessOnBehalfDataImport\\Helper\\": "tests/SprykerTest/Zed/BusinessOnBehalfDataImport/_support/Helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "BusinessOnBehalfDataImport module",
+            "support": {
+                "source": "https://github.com/spryker/business-on-behalf-data-import/tree/master"
+            },
+            "time": "2019-04-01T16:37:53+00:00"
+        },
+        {
+            "name": "spryker/business-on-behalf-extension",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/business-on-behalf-extension.git",
+                "reference": "2295335c2279b66287a8d8fc9d603223f75dacaa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/business-on-behalf-extension/zipball/2295335c2279b66287a8d8fc9d603223f75dacaa",
+                "reference": "2295335c2279b66287a8d8fc9d603223f75dacaa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "BusinessOnBehalfExtension module",
+            "support": {
+                "source": "https://github.com/spryker/business-on-behalf-extension/tree/1.0.0"
+            },
+            "time": "2019-05-21T09:24:51+00:00"
+        },
+        {
+            "name": "spryker/business-on-behalf-gui",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/business-on-behalf-gui.git",
+                "reference": "2090093f15826361cd4fe3ea1462a5456c27e592"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/business-on-behalf-gui/zipball/2090093f15826361cd4fe3ea1462a5456c27e592",
+                "reference": "2090093f15826361cd4fe3ea1462a5456c27e592",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4",
+                "spryker/business-on-behalf-gui-extension": "^1.0.0",
+                "spryker/company": "^1.2.0",
+                "spryker/company-business-unit": "^2.0.0",
+                "spryker/company-user": "^2.7.0",
+                "spryker/company-user-gui-extension": "^1.1.0",
+                "spryker/customer": "^7.0.0",
+                "spryker/customer-extension": "^1.1.0",
+                "spryker/kernel": "^3.30.0",
+                "spryker/symfony": "^3.1.0",
+                "spryker/util-text": "^1.1.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "BusinessOnBehalfGui module",
+            "support": {
+                "source": "https://github.com/spryker/business-on-behalf-gui/tree/1.3.0"
+            },
+            "time": "2022-06-01T13:09:31+00:00"
+        },
+        {
+            "name": "spryker/business-on-behalf-gui-extension",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/business-on-behalf-gui-extension.git",
+                "reference": "e984267457d66f6aee16cf40026b9e91e6843a6e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/business-on-behalf-gui-extension/zipball/e984267457d66f6aee16cf40026b9e91e6843a6e",
+                "reference": "e984267457d66f6aee16cf40026b9e91e6843a6e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/symfony": "*",
+                "spryker/testify": "*"
+            },
+            "suggest": {
+                "spryker/symfony": "Required to use form in plugin."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "BusinessOnBehalfGuiExtension module",
+            "support": {
+                "source": "https://github.com/spryker/business-on-behalf-gui-extension/tree/master"
+            },
+            "time": "2018-11-21T17:03:23+00:00"
+        },
+        {
             "name": "spryker/cache",
             "version": "3.5.0",
             "source": {
@@ -17809,6 +18397,1604 @@
                 "source": "https://github.com/spryker/collector/tree/6.7.0"
             },
             "time": "2022-01-04T12:43:20+00:00"
+        },
+        {
+            "name": "spryker/company",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company.git",
+                "reference": "9ebcb4294f19faf01f9c3cf975d7df7f2470f547"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company/zipball/9ebcb4294f19faf01f9c3cf975d7df7f2470f547",
+                "reference": "9ebcb4294f19faf01f9c3cf975d7df7f2470f547",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3",
+                "spryker/company-extension": "^1.0.0",
+                "spryker/kernel": "^3.30.0",
+                "spryker/propel-orm": "^1.13.0",
+                "spryker/store": "^1.0.0",
+                "spryker/zed-request": "^3.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*"
+            },
+            "suggest": {
+                "spryker/mail": "If you want to use mail plugins."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/",
+                    "SprykerTest\\Zed\\Company\\Helper\\": "tests/SprykerTest/Zed/Company/_support/Helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "Company module",
+            "support": {
+                "source": "https://github.com/spryker/company/tree/1.5.0"
+            },
+            "time": "2021-05-11T10:29:37+00:00"
+        },
+        {
+            "name": "spryker/company-business-unit",
+            "version": "2.14.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-business-unit.git",
+                "reference": "9ac58cae96066f6fdfe8acfbf8df6b3b5e97fc94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-business-unit/zipball/9ac58cae96066f6fdfe8acfbf8df6b3b5e97fc94",
+                "reference": "9ac58cae96066f6fdfe8acfbf8df6b3b5e97fc94",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4",
+                "spryker/company": "^1.0.0",
+                "spryker/company-business-unit-extension": "^1.2.0",
+                "spryker/company-extension": "^1.0.0",
+                "spryker/company-user": "^1.0.0 || ^2.0.0",
+                "spryker/company-user-extension": "^1.2.0",
+                "spryker/customer": "^7.0.0",
+                "spryker/kernel": "^3.30.0",
+                "spryker/propel-orm": "^1.0.0",
+                "spryker/zed-request": "^3.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/",
+                    "SprykerTest\\Zed\\CompanyBusinessUnit\\Helper\\": "tests/SprykerTest/Zed/CompanyBusinessUnit/_support/Helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyBusinessUnit module",
+            "support": {
+                "source": "https://github.com/spryker/company-business-unit/tree/2.14.1"
+            },
+            "time": "2022-08-10T18:42:04+00:00"
+        },
+        {
+            "name": "spryker/company-business-unit-data-import",
+            "version": "0.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-business-unit-data-import.git",
+                "reference": "0acbcb8916fd707aef194e3a0af2d352652724c2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-business-unit-data-import/zipball/0acbcb8916fd707aef194e3a0af2d352652724c2",
+                "reference": "0acbcb8916fd707aef194e3a0af2d352652724c2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "spryker/company": "^1.0.0",
+                "spryker/company-business-unit": "^2.0.0",
+                "spryker/company-unit-address": "^1.0.0",
+                "spryker/company-user": "^1.3.0 || ^2.0.0",
+                "spryker/data-import": "^1.2.0",
+                "spryker/kernel": "^3.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/country": "*",
+                "spryker/customer": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/",
+                    "SprykerTest\\Zed\\CompanyBusinessUnitDataImport\\Helper\\": "tests/SprykerTest/Zed/CompanyBusinessUnitDataImport/_support/Helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "CompanyBusinessUnitDataImport module",
+            "support": {
+                "source": "https://github.com/spryker/company-business-unit-data-import/tree/master"
+            },
+            "time": "2019-02-07T12:53:19+00:00"
+        },
+        {
+            "name": "spryker/company-business-unit-extension",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-business-unit-extension.git",
+                "reference": "aad8e102dfef3daa04fd743b9b4d3861c69d6311"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-business-unit-extension/zipball/aad8e102dfef3daa04fd743b9b4d3861c69d6311",
+                "reference": "aad8e102dfef3daa04fd743b9b4d3861c69d6311",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyBusinessUnitExtension module",
+            "support": {
+                "source": "https://github.com/spryker/company-business-unit-extension/tree/master"
+            },
+            "time": "2018-10-26T10:31:11+00:00"
+        },
+        {
+            "name": "spryker/company-business-unit-gui",
+            "version": "2.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-business-unit-gui.git",
+                "reference": "11a29ed3a3e797a6a31177e670eecf4285abbb44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-business-unit-gui/zipball/11a29ed3a3e797a6a31177e670eecf4285abbb44",
+                "reference": "11a29ed3a3e797a6a31177e670eecf4285abbb44",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3",
+                "spryker/company": "^1.0.0",
+                "spryker/company-business-unit": "^2.9.0",
+                "spryker/company-business-unit-gui-extension": "^1.0.0",
+                "spryker/company-user-gui-extension": "^1.0.0",
+                "spryker/gui": "^3.33.0",
+                "spryker/kernel": "^3.30.0",
+                "spryker/symfony": "^3.0.0",
+                "spryker/util-text": "^1.2.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/company-user": "*",
+                "spryker/customer": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyBusinessUnitGui module",
+            "support": {
+                "source": "https://github.com/spryker/company-business-unit-gui/tree/2.8.2"
+            },
+            "time": "2021-07-07T15:14:17+00:00"
+        },
+        {
+            "name": "spryker/company-business-unit-gui-extension",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-business-unit-gui-extension.git",
+                "reference": "1829b8b89db8fe329521f98a138af01822092c05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-business-unit-gui-extension/zipball/1829b8b89db8fe329521f98a138af01822092c05",
+                "reference": "1829b8b89db8fe329521f98a138af01822092c05",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/company-business-unit": "^1.1.0",
+                "spryker/gui": "^3.13.0",
+                "spryker/symfony": "^3.0.0",
+                "spryker/testify": "*"
+            },
+            "suggest": {
+                "spryker/company-business-unit": "To get full functionality of the current module",
+                "spryker/gui": "If you need gui",
+                "spryker/symfony": "If you want to provide plugins to CompanyBusinessUnitGui module"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyBusinessUnitGuiExtension module",
+            "support": {
+                "source": "https://github.com/spryker/company-business-unit-gui-extension/tree/master"
+            },
+            "time": "2018-03-30T15:22:15+00:00"
+        },
+        {
+            "name": "spryker/company-business-unit-storage",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-business-unit-storage.git",
+                "reference": "a2425a1eaa624cd6a3c9b881fc9eaca5081a1a3a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-business-unit-storage/zipball/a2425a1eaa624cd6a3c9b881fc9eaca5081a1a3a",
+                "reference": "a2425a1eaa624cd6a3c9b881fc9eaca5081a1a3a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "spryker/company-user-storage-extension": "^1.0.0",
+                "spryker/kernel": "^3.29.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyBusinessUnitStorage module",
+            "support": {
+                "source": "https://github.com/spryker/company-business-unit-storage/tree/master"
+            },
+            "time": "2019-03-01T10:32:26+00:00"
+        },
+        {
+            "name": "spryker/company-data-import",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-data-import.git",
+                "reference": "9b46f5f2208c23fb1d9bad51a20a235dbfacd782"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-data-import/zipball/9b46f5f2208c23fb1d9bad51a20a235dbfacd782",
+                "reference": "9b46f5f2208c23fb1d9bad51a20a235dbfacd782",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "spryker/company": "^1.0.0",
+                "spryker/data-import": "^1.2.0",
+                "spryker/kernel": "^3.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/",
+                    "SprykerTest\\Zed\\CompanyDataImport\\Helper\\": "tests/SprykerTest/Zed/CompanyDataImport/_support/Helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "CompanyDataImport module",
+            "support": {
+                "source": "https://github.com/spryker/company-data-import/tree/master"
+            },
+            "time": "2018-09-28T09:08:04+00:00"
+        },
+        {
+            "name": "spryker/company-extension",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-extension.git",
+                "reference": "1be7153b1c666ca4858a83c775b761c9bddcb99f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-extension/zipball/1be7153b1c666ca4858a83c775b761c9bddcb99f",
+                "reference": "1be7153b1c666ca4858a83c775b761c9bddcb99f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyExtension module",
+            "support": {
+                "source": "https://github.com/spryker/company-extension/tree/master"
+            },
+            "time": "2018-03-13T18:47:20+00:00"
+        },
+        {
+            "name": "spryker/company-gui",
+            "version": "1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-gui.git",
+                "reference": "a849d1cd18b3648576e19a89f54f13cdf80abbda"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-gui/zipball/a849d1cd18b3648576e19a89f54f13cdf80abbda",
+                "reference": "a849d1cd18b3648576e19a89f54f13cdf80abbda",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3",
+                "spryker/company": "^1.5.0",
+                "spryker/company-gui-extension": "^1.0.0",
+                "spryker/company-user-gui-extension": "^1.1.0",
+                "spryker/gui": "^3.33.0",
+                "spryker/kernel": "^3.30.0",
+                "spryker/symfony": "^3.0.0",
+                "spryker/util-text": "^1.1.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyGui module",
+            "support": {
+                "source": "https://github.com/spryker/company-gui/tree/1.5.1"
+            },
+            "time": "2021-07-12T07:32:25+00:00"
+        },
+        {
+            "name": "spryker/company-gui-extension",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-gui-extension.git",
+                "reference": "62c056a004ac0dc6546aa8fce16e2f3bb0e806d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-gui-extension/zipball/62c056a004ac0dc6546aa8fce16e2f3bb0e806d4",
+                "reference": "62c056a004ac0dc6546aa8fce16e2f3bb0e806d4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/gui": "^3.13.0",
+                "spryker/symfony": "^3.0.0",
+                "spryker/testify": "*"
+            },
+            "suggest": {
+                "spryker/company-gui": "If you want to provide plugins to CompanyGui module",
+                "spryker/gui": "If you want to use CompanyGuiExtension module plugin interfaces which used Gui transfer object.",
+                "spryker/symfony": "If you want to use CompanyGui plugins"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyGuiExtension module",
+            "support": {
+                "source": "https://github.com/spryker/company-gui-extension/tree/master"
+            },
+            "time": "2018-04-04T10:42:53+00:00"
+        },
+        {
+            "name": "spryker/company-role",
+            "version": "1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-role.git",
+                "reference": "2939454c1f8940cd1c62397ac867467feaea50b1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-role/zipball/2939454c1f8940cd1c62397ac867467feaea50b1",
+                "reference": "2939454c1f8940cd1c62397ac867467feaea50b1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "spryker/company": "^1.0.0",
+                "spryker/company-extension": "^1.0.0",
+                "spryker/company-user": "^1.0.0 || ^2.0.0",
+                "spryker/company-user-extension": "^1.0.0",
+                "spryker/customer": "^7.5.0",
+                "spryker/kernel": "^3.30.0",
+                "spryker/permission": "^1.2.0",
+                "spryker/permission-extension": "^1.1.0",
+                "spryker/propel-orm": "^1.0.0",
+                "spryker/zed-request": "^3.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/",
+                    "SprykerTest\\Zed\\CompanyRole\\Helper\\": "tests/SprykerTest/Zed/CompanyRole/_support/Helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyRole module",
+            "support": {
+                "source": "https://github.com/spryker/company-role/tree/master"
+            },
+            "time": "2020-05-29T13:08:37+00:00"
+        },
+        {
+            "name": "spryker/company-role-data-import",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-role-data-import.git",
+                "reference": "a3c1a25ac1450c06578c68d045ff2138afc162d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-role-data-import/zipball/a3c1a25ac1450c06578c68d045ff2138afc162d6",
+                "reference": "a3c1a25ac1450c06578c68d045ff2138afc162d6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "spryker/company": "^1.1.1",
+                "spryker/company-role": "^1.0.0",
+                "spryker/company-user": "^1.3.0 || ^2.0.0",
+                "spryker/data-import": "^1.3.0",
+                "spryker/kernel": "^3.0.0",
+                "spryker/permission": "^1.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/customer": "^4.1.0 || ^5.0.0 || ^6.0.0 || ^7.0.0",
+                "spryker/permission-extension": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/",
+                    "SprykerTest\\Zed\\CompanyRoleDataImport\\Helper\\": "tests/SprykerTest/Zed/CompanyRoleDataImport/_support/Helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "CompanyRoleDataImport module",
+            "support": {
+                "source": "https://github.com/spryker/company-role-data-import/tree/master"
+            },
+            "time": "2019-02-07T12:53:19+00:00"
+        },
+        {
+            "name": "spryker/company-role-gui",
+            "version": "1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-role-gui.git",
+                "reference": "c673c85ca70e90dc646d085246f26e7bd18625f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-role-gui/zipball/c673c85ca70e90dc646d085246f26e7bd18625f2",
+                "reference": "c673c85ca70e90dc646d085246f26e7bd18625f2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4",
+                "spryker/business-on-behalf-gui-extension": "^1.0.0",
+                "spryker/company": "^1.1.0",
+                "spryker/company-role": "^1.4.0",
+                "spryker/company-role-gui-extension": "^1.0.0",
+                "spryker/company-user-gui-extension": "^1.0.0",
+                "spryker/glossary": "^3.0.0",
+                "spryker/gui": "^3.13.0",
+                "spryker/kernel": "^3.30.0",
+                "spryker/permission": "^1.2.0",
+                "spryker/symfony": "^3.1.5",
+                "spryker/util-text": "^1.2.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyRoleGui module",
+            "support": {
+                "source": "https://github.com/spryker/company-role-gui/tree/1.7.0"
+            },
+            "time": "2022-06-01T13:09:31+00:00"
+        },
+        {
+            "name": "spryker/company-role-gui-extension",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-role-gui-extension.git",
+                "reference": "517dc57cd838d0d24a696e45a5b9c2296f20f409"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-role-gui-extension/zipball/517dc57cd838d0d24a696e45a5b9c2296f20f409",
+                "reference": "517dc57cd838d0d24a696e45a5b9c2296f20f409",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/symfony": "*"
+            },
+            "suggest": {
+                "spryker/symfony": "Required to use form in plugin."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyRoleGuiExtension module",
+            "support": {
+                "source": "https://github.com/spryker/company-role-gui-extension/tree/1.0.0"
+            },
+            "time": "2022-06-01T13:09:31+00:00"
+        },
+        {
+            "name": "spryker/company-unit-address",
+            "version": "1.14.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-unit-address.git",
+                "reference": "f2a24abe84972cc2c6fa538ed4db9dc53e653ddc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-unit-address/zipball/f2a24abe84972cc2c6fa538ed4db9dc53e653ddc",
+                "reference": "f2a24abe84972cc2c6fa538ed4db9dc53e653ddc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4",
+                "spryker/company": "^1.0.0",
+                "spryker/company-business-unit": "^1.0.0 || ^2.0.0",
+                "spryker/company-business-unit-extension": "^1.2.0",
+                "spryker/company-unit-address-extension": "^1.0.0",
+                "spryker/country": "^3.0.0",
+                "spryker/kernel": "^3.30.0",
+                "spryker/locale": "^3.0.0",
+                "spryker/propel-orm": "^1.0.0",
+                "spryker/tax-product-connector-extension": "^1.0.0",
+                "spryker/zed-request": "^3.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/",
+                    "SprykerTest\\Zed\\CompanyUnitAddress\\Helper\\": "tests/SprykerTest/Zed/CompanyUnitAddress/_support/Helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyUnitAddress module",
+            "support": {
+                "source": "https://github.com/spryker/company-unit-address/tree/1.14.0"
+            },
+            "time": "2022-09-28T12:34:39+00:00"
+        },
+        {
+            "name": "spryker/company-unit-address-data-import",
+            "version": "0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-unit-address-data-import.git",
+                "reference": "a78da926b4ae1b4019fac58c3420831b1d02ce42"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-unit-address-data-import/zipball/a78da926b4ae1b4019fac58c3420831b1d02ce42",
+                "reference": "a78da926b4ae1b4019fac58c3420831b1d02ce42",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "spryker/company": "^1.0.0",
+                "spryker/company-unit-address": "^1.0.0",
+                "spryker/country": "^3.0.0",
+                "spryker/data-import": "^1.2.0",
+                "spryker/kernel": "^3.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/",
+                    "SprykerTest\\Zed\\CompanyUnitAddressDataImport\\Helper\\": "tests/SprykerTest/Zed/CompanyUnitAddressDataImport/_support/Helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "CompanyUnitAddressDataImport module",
+            "support": {
+                "source": "https://github.com/spryker/company-unit-address-data-import/tree/master"
+            },
+            "time": "2018-11-03T11:03:36+00:00"
+        },
+        {
+            "name": "spryker/company-unit-address-extension",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-unit-address-extension.git",
+                "reference": "391ebf532c3189d179f17a66ebe3820d49f8160b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-unit-address-extension/zipball/391ebf532c3189d179f17a66ebe3820d49f8160b",
+                "reference": "391ebf532c3189d179f17a66ebe3820d49f8160b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/symfony": "^3.0.0",
+                "spryker/testify": "*"
+            },
+            "suggest": {
+                "spryker/symfony": "If you want to provide plugins to CompanyUnitAddress module"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyUnitAddressExtension module",
+            "support": {
+                "source": "https://github.com/spryker/company-unit-address-extension/tree/master"
+            },
+            "time": "2018-03-22T07:48:15+00:00"
+        },
+        {
+            "name": "spryker/company-unit-address-gui",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-unit-address-gui.git",
+                "reference": "847104bc19607667ebec32e7bbdd3bf7c9d661ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-unit-address-gui/zipball/847104bc19607667ebec32e7bbdd3bf7c9d661ab",
+                "reference": "847104bc19607667ebec32e7bbdd3bf7c9d661ab",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4",
+                "spryker/company": "^1.0.0",
+                "spryker/company-business-unit-gui-extension": "^1.0.0",
+                "spryker/company-unit-address": "^1.10.0",
+                "spryker/company-unit-address-gui-extension": "^1.0.0",
+                "spryker/country": "^3.0.0",
+                "spryker/gui": "^3.0.0",
+                "spryker/kernel": "^3.33.0",
+                "spryker/propel-orm": "^1.0.0",
+                "spryker/symfony": "^3.0.0",
+                "spryker/util-text": "^1.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyUnitAddressGui module",
+            "support": {
+                "source": "https://github.com/spryker/company-unit-address-gui/tree/1.1.1"
+            },
+            "time": "2022-07-21T10:16:39+00:00"
+        },
+        {
+            "name": "spryker/company-unit-address-gui-extension",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-unit-address-gui-extension.git",
+                "reference": "d2abff7c2c83df54ec363f49cbf7ec5f9ad73bb4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-unit-address-gui-extension/zipball/d2abff7c2c83df54ec363f49cbf7ec5f9ad73bb4",
+                "reference": "d2abff7c2c83df54ec363f49cbf7ec5f9ad73bb4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/company-unit-address": "^1.2.0",
+                "spryker/gui": "^3.13.0",
+                "spryker/symfony": "^3.0.0",
+                "spryker/testify": "*"
+            },
+            "suggest": {
+                "spryker/company-unit-address": "To get full functionality of the current module",
+                "spryker/gui": "If you want to use CompanyUnitAddressGuiExtension module plugin interfaces which used Gui transfer object.",
+                "spryker/symfony": "If you want to provide plugins to CompanyUnitAddressGui module"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyUnitAddressGuiExtension module",
+            "support": {
+                "source": "https://github.com/spryker/company-unit-address-gui-extension/tree/master"
+            },
+            "time": "2018-04-04T10:42:53+00:00"
+        },
+        {
+            "name": "spryker/company-unit-address-label",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-unit-address-label.git",
+                "reference": "9739d0c260ff4bae52f9ad03c2197b927ab74a7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-unit-address-label/zipball/9739d0c260ff4bae52f9ad03c2197b927ab74a7f",
+                "reference": "9739d0c260ff4bae52f9ad03c2197b927ab74a7f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4",
+                "spryker/company-unit-address": "^1.1.0",
+                "spryker/company-unit-address-extension": "^1.0.0",
+                "spryker/company-unit-address-gui-extension": "^1.0.0",
+                "spryker/gui": "^3.0.0",
+                "spryker/kernel": "^3.30.0",
+                "spryker/propel-orm": "^1.0.0",
+                "spryker/symfony": "^3.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/company": "*",
+                "spryker/company-business-unit": "*",
+                "spryker/country": "*",
+                "spryker/locale": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*",
+                "spryker/touch": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/",
+                    "SprykerTest\\Zed\\CompanyUnitAddressLabel\\Helper\\": "tests/SprykerTest/Zed/CompanyUnitAddressLabel/_support/Helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyUnitAddressLabel module",
+            "support": {
+                "source": "https://github.com/spryker/company-unit-address-label/tree/1.1.2"
+            },
+            "time": "2021-12-15T15:02:47+00:00"
+        },
+        {
+            "name": "spryker/company-unit-address-label-data-import",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-unit-address-label-data-import.git",
+                "reference": "35c3092d2ed984b7ef1178e755084d559328a8f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-unit-address-label-data-import/zipball/35c3092d2ed984b7ef1178e755084d559328a8f3",
+                "reference": "35c3092d2ed984b7ef1178e755084d559328a8f3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "spryker/company-unit-address": "^1.0.0",
+                "spryker/company-unit-address-label": "^1.0.0",
+                "spryker/data-import": "^1.2.0",
+                "spryker/kernel": "^3.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/country": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/",
+                    "SprykerTest\\Zed\\CompanyUnitAddressLabelDataImport\\Helper\\": "tests/SprykerTest/Zed/CompanyUnitAddressLabelDataImport/_support/Helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "CompanyUnitAddressLabelDataImport module",
+            "support": {
+                "source": "https://github.com/spryker/company-unit-address-label-data-import/tree/master"
+            },
+            "time": "2018-09-07T14:48:15+00:00"
+        },
+        {
+            "name": "spryker/company-unit-address-label-gui",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-unit-address-label-gui.git",
+                "reference": "47bf2f1467e4580936b81bb68a27f2c7c9f28336"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-unit-address-label-gui/zipball/47bf2f1467e4580936b81bb68a27f2c7c9f28336",
+                "reference": "47bf2f1467e4580936b81bb68a27f2c7c9f28336",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "spryker/company-unit-address-gui-extension": "^1.0.0",
+                "spryker/company-unit-address-label": "^1.1.0",
+                "spryker/kernel": "^3.30.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/company-unit-address": "*",
+                "spryker/gui": "*"
+            },
+            "suggest": {
+                "spryker/company-unit-address": "If you want to use CompanyUnitAddressTableExpanderPlugin which used CompanyUnitAddress module entity map.",
+                "spryker/gui": "If you want to use CompanyUnitAddressTableExpanderPlugin which used Gui transfer object."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyUnitAddressLabelGui module",
+            "support": {
+                "source": "https://github.com/spryker/company-unit-address-label-gui/tree/master"
+            },
+            "time": "2020-05-29T13:08:37+00:00"
+        },
+        {
+            "name": "spryker/company-user",
+            "version": "2.15.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-user.git",
+                "reference": "cef791a4673e415e0fa28d69f7012936c1a05afd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-user/zipball/cef791a4673e415e0fa28d69f7012936c1a05afd",
+                "reference": "cef791a4673e415e0fa28d69f7012936c1a05afd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4",
+                "spryker/company": "^1.0.0",
+                "spryker/company-extension": "^1.0.0",
+                "spryker/company-user-extension": "^1.2.0",
+                "spryker/customer": "^7.0.0",
+                "spryker/kernel": "^3.30.0",
+                "spryker/permission-extension": "^1.0.0",
+                "spryker/propel-orm": "^1.0.0",
+                "spryker/transfer": "^3.25.0",
+                "spryker/zed-request": "^3.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*"
+            },
+            "suggest": {
+                "spryker/permission": "Permission ^1.0.0 to have possibility use user permissions."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/",
+                    "SprykerTest\\Shared\\CompanyUser\\Helper\\": "tests/SprykerTest/Shared/CompanyUser/_support/Helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyUser module",
+            "support": {
+                "source": "https://github.com/spryker/company-user/tree/2.15.1"
+            },
+            "time": "2022-07-19T12:59:07+00:00"
+        },
+        {
+            "name": "spryker/company-user-agent",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-user-agent.git",
+                "reference": "7615f587bd113c9764c4eb9177d432b49125a0bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-user-agent/zipball/7615f587bd113c9764c4eb9177d432b49125a0bd",
+                "reference": "7615f587bd113c9764c4eb9177d432b49125a0bd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "spryker/company-user": "^2.10.0",
+                "spryker/kernel": "^3.30.0",
+                "spryker/zed-request": "^3.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyUserAgent module",
+            "support": {
+                "source": "https://github.com/spryker/company-user-agent/tree/1.0.1"
+            },
+            "time": "2020-05-29T13:08:37+00:00"
+        },
+        {
+            "name": "spryker/company-user-data-import",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-user-data-import.git",
+                "reference": "34a93baf7d4661259d21192db30b56b029929028"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-user-data-import/zipball/34a93baf7d4661259d21192db30b56b029929028",
+                "reference": "34a93baf7d4661259d21192db30b56b029929028",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1",
+                "spryker/company": "^1.0.0",
+                "spryker/company-user": "^2.9.0",
+                "spryker/customer": "^4.1.0 || ^5.0.0 || ^6.0.0 || ^7.0.0",
+                "spryker/data-import": "^1.3.0",
+                "spryker/kernel": "^3.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/",
+                    "SprykerTest\\Zed\\CompanyUserDataImport\\Helper\\": "tests/SprykerTest/Zed/CompanyUserDataImport/_support/Helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "CompanyUserDataImport module",
+            "support": {
+                "source": "https://github.com/spryker/company-user-data-import/tree/0.2.0"
+            },
+            "time": "2019-04-01T16:37:53+00:00"
+        },
+        {
+            "name": "spryker/company-user-extension",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-user-extension.git",
+                "reference": "44fc4eea5c1cb31d381bfabae585d0c03ce84e58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-user-extension/zipball/44fc4eea5c1cb31d381bfabae585d0c03ce84e58",
+                "reference": "44fc4eea5c1cb31d381bfabae585d0c03ce84e58",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyUserExtension module",
+            "support": {
+                "source": "https://github.com/spryker/company-user-extension/tree/master"
+            },
+            "time": "2019-02-26T13:05:25+00:00"
+        },
+        {
+            "name": "spryker/company-user-gui",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-user-gui.git",
+                "reference": "bbac3649303b89cf19d74d3d3adb599c2945a1af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-user-gui/zipball/bbac3649303b89cf19d74d3d3adb599c2945a1af",
+                "reference": "bbac3649303b89cf19d74d3d3adb599c2945a1af",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4",
+                "spryker/company": "^1.1.3",
+                "spryker/company-user": "^2.7.0",
+                "spryker/company-user-gui-extension": "^1.0.0",
+                "spryker/customer": "^7.10.2",
+                "spryker/customer-extension": "^1.1.0",
+                "spryker/gui": "^3.33.0",
+                "spryker/kernel": "^3.30.0",
+                "spryker/propel-orm": "^1.0.0",
+                "spryker/symfony": "^3.1.5",
+                "spryker/util-text": "^1.2.1"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyUserGui module",
+            "support": {
+                "source": "https://github.com/spryker/company-user-gui/tree/1.9.0"
+            },
+            "time": "2022-09-10T10:43:32+00:00"
+        },
+        {
+            "name": "spryker/company-user-gui-extension",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-user-gui-extension.git",
+                "reference": "ca3a9c698aa09852d2d426e70b58c53d7bdb502a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-user-gui-extension/zipball/ca3a9c698aa09852d2d426e70b58c53d7bdb502a",
+                "reference": "ca3a9c698aa09852d2d426e70b58c53d7bdb502a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/gui": "*",
+                "spryker/symfony": "*",
+                "spryker/testify": "*"
+            },
+            "suggest": {
+                "spryker/gui": "If you want to use CompanyUserGuiExtension module plugin interfaces: ^3.13.1",
+                "spryker/symfony": "If you want to use Step handler plugin."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyUserGuiExtension module",
+            "support": {
+                "source": "https://github.com/spryker/company-user-gui-extension/tree/master"
+            },
+            "time": "2018-12-20T12:46:33+00:00"
+        },
+        {
+            "name": "spryker/company-user-invitation",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-user-invitation.git",
+                "reference": "8dca423dc826a6e315fda77282df6acfd639aba3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-user-invitation/zipball/8dca423dc826a6e315fda77282df6acfd639aba3",
+                "reference": "8dca423dc826a6e315fda77282df6acfd639aba3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "spryker/application": "^3.9.0",
+                "spryker/company-business-unit": "^1.1.0 || ^2.0.0",
+                "spryker/company-user": "^1.0.0 || ^2.0.0",
+                "spryker/customer-extension": "^1.0.0",
+                "spryker/kernel": "^3.30.0",
+                "spryker/mail": "^4.6.0",
+                "spryker/permission-extension": "^1.0.0",
+                "spryker/propel-orm": "^1.6.1",
+                "spryker/util-text": "^1.2.1",
+                "spryker/zed-request": "^3.4.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/company": "*",
+                "spryker/company-role": "*",
+                "spryker/customer": "*",
+                "spryker/installer": "*",
+                "spryker/permission": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*"
+            },
+            "suggest": {
+                "spryker/customer": "You need to have Customer installed create company users after registration",
+                "spryker/installer": "You need to have Installer to set up values for invitation statuses",
+                "spryker/silex": "You need to have Silex installed to use the Config Profiler",
+                "spryker/twig": "You need to have Twig installed to use the Config Profiler"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/",
+                    "SprykerTest\\Zed\\CompanyUserInvitation\\Helper\\": "tests/SprykerTest/Zed/CompanyUserInvitation/_support/Helper/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyUserInvitation module",
+            "support": {
+                "source": "https://github.com/spryker/company-user-invitation/tree/1.2.2"
+            },
+            "time": "2020-08-18T13:03:17+00:00"
+        },
+        {
+            "name": "spryker/company-user-storage",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-user-storage.git",
+                "reference": "5e12a0c3285356d4bffd1d7becc61d7df15768be"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-user-storage/zipball/5e12a0c3285356d4bffd1d7becc61d7df15768be",
+                "reference": "5e12a0c3285356d4bffd1d7becc61d7df15768be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4",
+                "spryker/company-user": "^2.13.0",
+                "spryker/company-user-storage-extension": "^1.0.0",
+                "spryker/event-behavior": "^1.3.1",
+                "spryker/kernel": "^3.33.0",
+                "spryker/propel-orm": "^1.3.0",
+                "spryker/shared-carts-rest-api-extension": "^1.0.0",
+                "spryker/storage": "^3.4.0",
+                "spryker/synchronization": "^1.1.0",
+                "spryker/synchronization-behavior": "^1.0.0",
+                "spryker/synchronization-extension": "^1.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/company": "*",
+                "spryker/customer": "*",
+                "spryker/event": "*",
+                "spryker/propel": "*",
+                "spryker/queue": "*",
+                "spryker/testify": "*"
+            },
+            "suggest": {
+                "spryker/company": "If you want to use CompanyEvents",
+                "spryker/event": "If you want to use Event plugins, minimum required version: 2.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyUserStorage module",
+            "support": {
+                "source": "https://github.com/spryker/company-user-storage/tree/1.5.0"
+            },
+            "time": "2022-04-18T08:41:46+00:00"
+        },
+        {
+            "name": "spryker/company-user-storage-extension",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/company-user-storage-extension.git",
+                "reference": "7cf3e5934f12ffc8d6ffc6a412f93932d599acc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/company-user-storage-extension/zipball/7cf3e5934f12ffc8d6ffc6a412f93932d599acc3",
+                "reference": "7cf3e5934f12ffc8d6ffc6a412f93932d599acc3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "CompanyUserStorageExtension module",
+            "support": {
+                "source": "https://github.com/spryker/company-user-storage-extension/tree/1.0.0"
+            },
+            "time": "2019-02-06T16:17:54+00:00"
         },
         {
             "name": "spryker/config",
@@ -25268,6 +27454,107 @@
             "time": "2022-04-26T12:27:56+00:00"
         },
         {
+            "name": "spryker/oauth-company-user",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/oauth-company-user.git",
+                "reference": "2ae01ba280ba1fbe07b02162db3c79a37dfdf837"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/oauth-company-user/zipball/2ae01ba280ba1fbe07b02162db3c79a37dfdf837",
+                "reference": "2ae01ba280ba1fbe07b02162db3c79a37dfdf837",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3",
+                "psr/http-message": "^1.0.0",
+                "spryker/company-user": "^2.11.0",
+                "spryker/customer": "^7.0.0",
+                "spryker/customer-extension": "^1.3.0",
+                "spryker/kernel": "^3.30.0",
+                "spryker/oauth": "^1.4.0 || ^2.0.0",
+                "spryker/oauth-company-user-extension": "^1.1.0",
+                "spryker/oauth-extension": "^1.1.0",
+                "spryker/util-encoding": "^2.0.0",
+                "spryker/zed-request": "^3.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/company": "*",
+                "spryker/installer": "*",
+                "spryker/oauth-customer-connector": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*"
+            },
+            "suggest": {
+                "spryker/installer": "If you want to use Installer plugins."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "OauthCompanyUser module",
+            "support": {
+                "source": "https://github.com/spryker/oauth-company-user/tree/2.2.0"
+            },
+            "time": "2021-06-24T11:15:12+00:00"
+        },
+        {
+            "name": "spryker/oauth-company-user-extension",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/oauth-company-user-extension.git",
+                "reference": "d8417473f74aca02f2921be2b3334a03118268a6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/oauth-company-user-extension/zipball/d8417473f74aca02f2921be2b3334a03118268a6",
+                "reference": "d8417473f74aca02f2921be2b3334a03118268a6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "OauthCompanyUserExtension module",
+            "support": {
+                "source": "https://github.com/spryker/oauth-company-user-extension/tree/master"
+            },
+            "time": "2019-05-21T11:03:32+00:00"
+        },
+        {
             "name": "spryker/oauth-cryptography",
             "version": "1.0.1",
             "source": {
@@ -25497,6 +27784,63 @@
                 "source": "https://github.com/spryker/oauth-extension/tree/1.5.0"
             },
             "time": "2020-07-24T09:02:14+00:00"
+        },
+        {
+            "name": "spryker/oauth-permission",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/oauth-permission.git",
+                "reference": "713d27683a46bba1c96ec55c3c2a3f5a95f61f1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/oauth-permission/zipball/713d27683a46bba1c96ec55c3c2a3f5a95f61f1a",
+                "reference": "713d27683a46bba1c96ec55c3c2a3f5a95f61f1a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "spryker/company-user": "^2.9.0",
+                "spryker/kernel": "^3.30.0",
+                "spryker/oauth": "^1.3.0 || ^2.0.0",
+                "spryker/oauth-company-user-extension": "^1.0.0",
+                "spryker/oauth-customer-connector-extension": "^1.0.0",
+                "spryker/oauth-extension": "^1.2.0",
+                "spryker/oauth-revoke-extension": "^1.0.0",
+                "spryker/permission": "^1.5.0",
+                "spryker/permission-extension": "^1.0.0",
+                "spryker/symfony": "^3.0.0",
+                "spryker/util-encoding": "^2.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/company": "*",
+                "spryker/company-role": "*",
+                "spryker/customer": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "OauthPermission module",
+            "support": {
+                "source": "https://github.com/spryker/oauth-permission/tree/1.3.0"
+            },
+            "time": "2020-07-20T18:03:09+00:00"
         },
         {
             "name": "spryker/oauth-revoke",
@@ -36632,6 +38976,48 @@
             "time": "2021-08-16T11:00:46+00:00"
         },
         {
+            "name": "spryker/shared-carts-rest-api-extension",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/shared-carts-rest-api-extension.git",
+                "reference": "6d3aa6a97e4af59acc8f3df9161657272c66a122"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/shared-carts-rest-api-extension/zipball/6d3aa6a97e4af59acc8f3df9161657272c66a122",
+                "reference": "6d3aa6a97e4af59acc8f3df9161657272c66a122",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "SharedCartsRestApiExtension module",
+            "support": {
+                "source": "https://github.com/spryker/shared-carts-rest-api-extension/tree/1.0.0"
+            },
+            "time": "2019-06-12T15:27:44+00:00"
+        },
+        {
             "name": "spryker/shipment",
             "version": "8.10.0",
             "source": {
@@ -38450,6 +40836,47 @@
                 "source": "https://github.com/spryker/tax-product-connector/tree/4.4.0"
             },
             "time": "2021-06-14T20:32:55+00:00"
+        },
+        {
+            "name": "spryker/tax-product-connector-extension",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/tax-product-connector-extension.git",
+                "reference": "f5c4e50c64973d155943dd6dd70aba11b14e7996"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/tax-product-connector-extension/zipball/f5c4e50c64973d155943dd6dd70aba11b14e7996",
+                "reference": "f5c4e50c64973d155943dd6dd70aba11b14e7996",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "TaxProductConnectorExtension module",
+            "support": {
+                "source": "https://github.com/spryker/tax-product-connector-extension/tree/1.0.0"
+            },
+            "time": "2022-09-28T12:34:39+00:00"
         },
         {
             "name": "spryker/tax-product-storage",
