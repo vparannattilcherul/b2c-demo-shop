@@ -142,6 +142,7 @@ groups:
                 application: glue
                 endpoints:
                     glue.us.spryker.local:
+                        cors-allow-origin: '*'
                         store: US
             backoffice_us:
                 application: backoffice

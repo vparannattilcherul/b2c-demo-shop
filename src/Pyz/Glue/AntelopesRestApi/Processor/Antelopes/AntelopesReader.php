@@ -36,9 +36,6 @@ class AntelopesReader implements AntelopesReaderInterface
     public function getAntelopeSearchData(RestRequestInterface $restRequest): RestResponseInterface
     {
         $response = $this->restResourceBuilder->createRestResponse();
-        print_r(get_class($restRequest));
-        print_r(get_class($restRequest->getResource()));
-        print_r($restRequest->getResource());
         $resourceIdentifier = $restRequest->getResource()->getId();
 
         if (!$resourceIdentifier) {

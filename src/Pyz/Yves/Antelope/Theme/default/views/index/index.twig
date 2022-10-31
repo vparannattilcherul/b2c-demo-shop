@@ -5,8 +5,14 @@
 } %}
 
 {% block body %}
-    <div style="background-color: {{ data.antelope.color }};">
-        <div>Name: {{ data.antelope.name }}</div>
-        <div>Color: {{ data.antelope.color }}</div>
+    {% if data.antelope.name is defined %}
+        <div style="background-color: {{ data.antelope.color }};">
+            <div>Name: {{ data.antelope.name }}</div>
+            <div>Color: {{ data.antelope.color }}</div>
+        </div>
+    {% else %}
+    <div style="background-color:gray;color:white;">
+        <p>No antelope found with this name</p>
     </div>
+    {% endif %}
 {% endblock %}
