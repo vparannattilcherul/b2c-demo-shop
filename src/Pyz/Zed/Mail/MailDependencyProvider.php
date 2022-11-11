@@ -28,6 +28,7 @@ use Spryker\Zed\Oms\Communication\Plugin\Mail\OrderConfirmationMailTypePlugin;
 use Spryker\Zed\Oms\Communication\Plugin\Mail\OrderShippedMailTypePlugin;
 use Spryker\Zed\SalesInvoice\Communication\Plugin\Mail\OrderInvoiceMailTypePlugin;
 use Spryker\Zed\UserPasswordResetMail\Communication\Plugin\Mail\UserPasswordResetMailTypePlugin;
+use Pyz\Zed\Customer\Communication\Plugin\Mail\CustomMailTypePlugin;
 
 class MailDependencyProvider extends SprykerMailDependencyProvider
 {
@@ -55,7 +56,8 @@ class MailDependencyProvider extends SprykerMailDependencyProvider
                 ->add(new AvailabilityNotificationMailTypePlugin())
                 ->add(new UserPasswordResetMailTypePlugin())
                 ->add(new GiftCardDeliveryMailTypePlugin())#GiftCardFeature
-                ->add(new GiftCardUsageMailTypePlugin()) #GiftCardFeature
+                ->add(new GiftCardUsageMailTypePlugin()) #GiftCardFeature 
+                ->add(new CustomMailTypePlugin())
                 ->add(new OrderInvoiceMailTypePlugin());
 
             return $mailCollection;

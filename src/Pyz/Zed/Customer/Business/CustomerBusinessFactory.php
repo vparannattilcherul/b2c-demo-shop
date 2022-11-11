@@ -9,6 +9,7 @@ namespace Pyz\Zed\Customer\Business;
 
 use Pyz\Zed\Customer\Business\Anonymizer\CustomerAnonymizer;
 use Spryker\Zed\Customer\Business\CustomerBusinessFactory as SprykerCustomerBusinessFactory;
+use Pyz\Zed\Customer\Business\Customer\Customer;
 
 /**
  * @method \Spryker\Zed\Customer\CustomerConfig getConfig()
@@ -29,5 +30,28 @@ class CustomerBusinessFactory extends SprykerCustomerBusinessFactory
             $this->createAddress(),
             $this->getCustomerAnonymizerPlugins(),
         );
+    }
+
+     /**
+     * @return \Spryker\Zed\Customer\Business\Customer\CustomerInterface
+     */
+    public function createCustomer()
+    {
+        $config = $this->getConfig();
+
+        $customer = new Customer(
+            $this->getQueryContainer(),
+            $this->createCustomerReferenceGenerator(),
+            $config,
+            $this->createEmailValidator(),
+            $this->getMailFacade(),
+            $this->getLocaleQueryContainer(),
+            $this->getLocaleFacade(),
+            $this->createCustomerExpander(),
+            $this->createCustomerPasswordPolicyValidator(),
+            $this->getPostCustomerRegistrationPlugins(),
+        );
+
+        return $customer;
     }
 }
