@@ -141,7 +141,9 @@ $stores['AT'] = [
         'storesWithSharedPersistence' => ['DE'],
     ] + $stores['DE'];
 
-$stores['US'] = [
+$stores['DEMO'] = $stores['DE'];
+
+    $stores['US'] = [
     // different contexts
     'contexts' => [
         // shared settings for all contexts

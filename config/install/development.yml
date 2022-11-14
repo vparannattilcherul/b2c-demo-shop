@@ -5,6 +5,7 @@ stores:
     - DE
     - AT
     - US
+    - DEMO
 
 command-timeout: 3600
 

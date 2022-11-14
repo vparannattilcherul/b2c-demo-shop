@@ -47,6 +47,14 @@ regions:
                         namespace: 2
                     search:
                         namespace: at_search
+            DEMO:
+                services:
+                    broker:
+                        namespace: demo-docker
+                    key_value_store:
+                        namespace: 4
+                    search:
+                        namespace: demo_search
     US:
         services:
             database:
@@ -99,6 +107,11 @@ groups:
                         services:
                             session:
                                 namespace: 4
+                    backoffice.demo.spryker.local:
+                        store: DEMO
+                        services:
+                            session:
+                                namespace: 7
             backend_gateway_eu:
                 application: backend-gateway
                 endpoints:
