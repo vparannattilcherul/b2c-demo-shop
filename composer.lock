@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4efa9d423ff646330682478e007e7303",
+    "content-hash": "1adfd67720df84817d1e0b63cb0866e0",
     "packages": [
         {
             "name": "async-aws/core",
@@ -5577,6 +5577,44 @@
             "time": "2022-04-29T14:07:59+00:00"
         },
         {
+            "name": "spryker-feature/quick-add-to-cart",
+            "version": "202204.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker-feature/quick-add-to-cart.git",
+                "reference": "b87e99cc972f72df2e7985ae565d9fbdee3c40ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker-feature/quick-add-to-cart/zipball/b87e99cc972f72df2e7985ae565d9fbdee3c40ee",
+                "reference": "b87e99cc972f72df2e7985ae565d9fbdee3c40ee",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4",
+                "spryker-shop/quick-order-page": "^4.7.0",
+                "spryker/quick-order": "^3.0.0"
+            },
+            "suggest": {
+                "spryker-feature/cart": "Recommended feature dependency."
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "202204.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "Quick add to cart [feature]",
+            "support": {
+                "source": "https://github.com/spryker-feature/quick-add-to-cart/tree/202204.0"
+            },
+            "time": "2022-04-29T14:08:16+00:00"
+        },
+        {
             "name": "spryker-feature/reclamations",
             "version": "202204.0",
             "source": {
@@ -10388,6 +10426,118 @@
                 "source": "https://github.com/spryker-shop/product-widget/tree/1.3.1"
             },
             "time": "2020-05-29T13:03:33+00:00"
+        },
+        {
+            "name": "spryker-shop/quick-order-page",
+            "version": "4.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker-shop/quick-order-page.git",
+                "reference": "a740fc8a7b389bdf4a06eed0fe7d74a812bff2cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker-shop/quick-order-page/zipball/a740fc8a7b389bdf4a06eed0fe7d74a812bff2cb",
+                "reference": "a740fc8a7b389bdf4a06eed0fe7d74a812bff2cb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4",
+                "spryker-shop/quick-order-page-extension": "^1.2.0",
+                "spryker-shop/shop-application": "^1.0.0",
+                "spryker-shop/shop-ui": "^1.58.0",
+                "spryker/application": "^3.0.0",
+                "spryker/cart": "^4.0.0 || ^5.0.0 || ^7.0.0",
+                "spryker/kernel": "^3.52.0",
+                "spryker/price-product-storage": "^2.9.0 || ^4.0.0",
+                "spryker/product-quantity-storage": "^1.2.0 || ^3.0.0",
+                "spryker/product-storage": "^1.7.0",
+                "spryker/quick-order": "^1.1.0 || ^3.0.0",
+                "spryker/quote": "^1.0.0 || ^2.0.0",
+                "spryker/symfony": "^3.1.0",
+                "spryker/util-csv": "^1.0.0",
+                "spryker/zed-request": "^3.6.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/product": "*",
+                "spryker/propel": "*",
+                "spryker/router": "*",
+                "spryker/silex": "*",
+                "spryker/testify": "*"
+            },
+            "suggest": {
+                "spryker-shop/cart-page": "Widget plugins are available for this module.",
+                "spryker-shop/checkout-page": "Widget plugins are available for this module.",
+                "spryker-shop/merchant-search-widget": "If you want to render a Merchants filter.",
+                "spryker/router": "If you want to use RouteProviderPlugins to be added to the Route Module.",
+                "spryker/silex": "If you want to use ServiceProvider."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SprykerShop\\": "src/SprykerShop/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "QuickOrderPage module",
+            "support": {
+                "source": "https://github.com/spryker-shop/quick-order-page/tree/4.7.2"
+            },
+            "time": "2022-07-26T06:34:43+00:00"
+        },
+        {
+            "name": "spryker-shop/quick-order-page-extension",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker-shop/quick-order-page-extension.git",
+                "reference": "d498977b429066b4a31d05ee4ccc3d72e9b29cbb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker-shop/quick-order-page-extension/zipball/d498977b429066b4a31d05ee4ccc3d72e9b29cbb",
+                "reference": "d498977b429066b4a31d05ee4ccc3d72e9b29cbb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/symfony": "*"
+            },
+            "suggest": {
+                "spryker/symfony": "If you want to use symfony forms"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SprykerShop\\": "src/SprykerShop/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "QuickOrderPageExtension module",
+            "support": {
+                "source": "https://github.com/spryker-shop/quick-order-page-extension/tree/1.2.0"
+            },
+            "time": "2022-04-04T15:20:02+00:00"
         },
         {
             "name": "spryker-shop/redirect-page",
@@ -33076,6 +33226,52 @@
             "time": "2021-10-05T10:02:48+00:00"
         },
         {
+            "name": "spryker/quick-order",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/quick-order.git",
+                "reference": "337e0d960cf88ccd870f53b9a575118569da3364"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/quick-order/zipball/337e0d960cf88ccd870f53b9a575118569da3364",
+                "reference": "337e0d960cf88ccd870f53b9a575118569da3364",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "spryker/kernel": "^3.30.0",
+                "spryker/locale": "^3.0.0",
+                "spryker/product-storage": "^1.6.0",
+                "spryker/quick-order-extension": "^1.1.0",
+                "spryker/synchronization-behavior": "^1.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "QuickOrder module",
+            "support": {
+                "source": "https://github.com/spryker/quick-order/tree/master"
+            },
+            "time": "2020-05-29T13:08:37+00:00"
+        },
+        {
             "name": "spryker/quick-order-extension",
             "version": "1.1.0",
             "source": {
@@ -52939,5 +53135,5 @@
     "platform-overrides": {
         "php": "7.4.20"
     },
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }

@@ -141,7 +141,6 @@ $stores['AT'] = [
         'storesWithSharedPersistence' => ['DE'],
     ] + $stores['DE'];
 
-$stores['DEMO'] = $stores['DE'];
 
     $stores['US'] = [
     // different contexts

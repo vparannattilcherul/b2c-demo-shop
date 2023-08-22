@@ -12,7 +12,7 @@ class IndexController extends SprykerIndexController
 	 */
 	public function indexAction()
 	{
-		die('Hello DE Store!');
-	}
+
+    }
 
 }
